@@ -80,6 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31446BCD2D2FD6790028A277 /* ManyTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ManyTests.xctestplan; sourceTree = "<group>"; };
 		319343DF2D2EC32200F18E19 /* Feature1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Feature1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		319343EC2D2EC34600F18E19 /* Feature2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Feature2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		319343F92D2EC35000F18E19 /* Feature3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Feature3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,6 +250,7 @@
 		31FBB2E92D2D719E00B7BA14 = {
 			isa = PBXGroup;
 			children = (
+				31446BCD2D2FD6790028A277 /* ManyTests.xctestplan */,
 				31FBB3262D2D724D00B7BA14 /* Makefile */,
 				31FBB2F42D2D719E00B7BA14 /* ManyTests */,
 				319343E02D2EC32200F18E19 /* Feature1Tests */,

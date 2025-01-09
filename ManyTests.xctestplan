@@ -1,0 +1,101 @@
+{
+  "configurations" : [
+    {
+      "id" : "9C1BBE70-1F42-40EB-8F8C-A04ED87345F6",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ManyTests.xcodeproj",
+      "identifier" : "31FBB2F12D2D719E00B7BA14",
+      "name" : "ManyTests"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "319343DE2D2EC32200F18E19",
+        "name" : "Feature1Tests"
+      }
+    },
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "319343EB2D2EC34600F18E19",
+        "name" : "Feature2Tests"
+      }
+    },
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "319343F82D2EC35000F18E19",
+        "name" : "Feature3Tests"
+      }
+    },
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "319344052D2EC35A00F18E19",
+        "name" : "Feature4Tests"
+      }
+    },
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "319344122D2EC36300F18E19",
+        "name" : "Feature5Tests"
+      }
+    },
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "3193441F2D2EC36C00F18E19",
+        "name" : "Feature6Tests"
+      }
+    },
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "3193442C2D2EC37400F18E19",
+        "name" : "Feature7Tests"
+      }
+    },
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "319344392D2EC37C00F18E19",
+        "name" : "Feature8Tests"
+      }
+    },
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "319344462D2EC38400F18E19",
+        "name" : "Feature9Tests"
+      }
+    },
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "319344532D2EC38A00F18E19",
+        "name" : "Feature10Tests"
+      }
+    }
+  ],
+  "version" : 1
+}

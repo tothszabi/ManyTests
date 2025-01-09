@@ -89,7 +89,8 @@ func RunTests(testProductsPath, testShard string) error {
 		testArg += fmt.Sprintf("-only-testing:%s ", testName)
 	}
 
-	cmd := exec.Command("xcodebuild", "test-without-building", "-testProductsPath", testProductsPath, testArg, "-destination", "platform=iOS Simulator,name=iPhone 16 Pro Max,OS=latest")
+	cmd := exec.Command("xcodebuild", "test-without-building", "-testProductsPath", testProductsPath, testArg, "-destination", "platform=iOS Simulator,name=iPhone 16 Pro Max,OS=latest", "-parallel-testing-enabled", "NO")
+	//cmd := exec.Command("xcodebuild", "test-without-building", "-testProductsPath", testProductsPath, testArg, "-destination", "platform=iOS Simulator,name=iPhone 16 Pro Max,OS=latest", "-maximum-concurrent-test-simulator-destinations", "2", "-maximum-parallel-testing-workers", "1")
 	cmd.Stdout = os.Stdout
 
 	if err := cmd.Run(); err != nil {
