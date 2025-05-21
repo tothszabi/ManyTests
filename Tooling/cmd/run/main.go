@@ -16,6 +16,15 @@ var (
 func main() {
 	flag.Parse()
 
+	flag.Usage = func() {
+		fmt.Println("Usage: run [options]")
+		fmt.Println("Options:")
+		flag.PrintDefaults()
+	}
+	flag.Parse()
+
+	fmt.Println("testProductsPath:", *testProductsPath)
+
 	if testProductsPath == nil || testShard == nil || *testShard == "" {
 		log.Fatal(fmt.Errorf("incorrect parameters"))
 		return

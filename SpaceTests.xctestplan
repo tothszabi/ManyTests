@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "EE3A58A8-5327-4B0A-AD29-1C986EE2BFE4",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "319344462D2EC38400F18E19",
+        "name" : "Feature9Tests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "3108D3F52DDDA88B00F62477",
+        "name" : "Space Tests"
+      }
+    }
+  ],
+  "version" : 1
+}

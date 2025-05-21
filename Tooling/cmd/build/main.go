@@ -10,6 +10,7 @@ import (
 
 var (
 	projectPath = flag.String("path", "../ManyTests.xcodeproj", "test products path")
+	testPlan    = flag.String("testPlan", "", "test plan")
 )
 
 func main() {
@@ -20,13 +21,13 @@ func main() {
 		return
 	}
 
-	if err := run(*projectPath); err != nil {
+	if err := run(*projectPath, *testPlan); err != nil {
 		log.Fatal(err)
 	}
 }
 
-func run(projectPath string) error {
-	testProductsPath, err := internal.BuildTestProducts(projectPath)
+func run(projectPath, testPlan string) error {
+	testProductsPath, err := internal.BuildTestProducts(projectPath, testPlan)
 	if err != nil {
 		return err
 	}

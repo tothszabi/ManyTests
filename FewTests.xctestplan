@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "B182C83E-F8C1-4596-ABB1-D6A6F3685980",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "319343F82D2EC35000F18E19",
+        "name" : "Feature3Tests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ManyTests.xcodeproj",
+        "identifier" : "319343DE2D2EC32200F18E19",
+        "name" : "Feature1Tests"
+      }
+    }
+  ],
+  "version" : 1
+}

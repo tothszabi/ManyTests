@@ -33,6 +33,12 @@
             reference = "container:ManyTests.xctestplan"
             default = "YES">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:FewTests.xctestplan">
+         </TestPlanReference>
+         <TestPlanReference
+            reference = "container:SpaceTests.xctestplan">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference
@@ -164,6 +170,17 @@
                BlueprintIdentifier = "319344532D2EC38A00F18E19"
                BuildableName = "Feature10Tests.xctest"
                BlueprintName = "Feature10Tests"
+               ReferencedContainer = "container:ManyTests.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3108D3F52DDDA88B00F62477"
+               BuildableName = "Space Tests.xctest"
+               BlueprintName = "Space Tests"
                ReferencedContainer = "container:ManyTests.xcodeproj">
             </BuildableReference>
          </TestableReference>

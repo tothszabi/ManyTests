@@ -58,6 +58,7 @@ build-tests:
 	-scheme ManyTests \
 	-destination 'platform=iOS Simulator,name=iPhone 16 Pro Max,OS=latest' \
 	-testProductsPath ./test-products \
+	-testPlan SpaceTests
 
 list-prebuilt-tests:
 	xcodebuild \
@@ -67,12 +68,13 @@ list-prebuilt-tests:
 	-test-enumeration-style flat \
 	-testProductsPath test-products.xctestproducts \
 	-destination 'platform=iOS Simulator,name=iPhone 16 Pro Max,OS=latest' \
+	-testPlan SpaceTests
 
 run-subset-prebuilt-tests:
 	xcodebuild \
 	test-without-building \
 	-testProductsPath test-products.xctestproducts \
-	-only-testing:ManyTestsTests/ManyTestsTests/testAnotherExample \
-	-only-testing:ManyTestsUITests/ManyTestsUITests/testAnotherExample \
-	-only-testing:ManyTestsUITests/ManyTestsUITestsLaunchTests/testAnotherLaunch \
+	-only-testing:Space\ Tests/Space_Tests/testExample \
+	-only-testing:Space\ Tests/Space_Tests/testPerformanceExample \
+	-only-testing:Feature9Tests/Feature9Test9Tests/testExample9 \
 	-destination 'platform=iOS Simulator,name=iPhone 16 Pro Max,OS=latest' \

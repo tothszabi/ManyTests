@@ -14,6 +14,7 @@ import (
 
 var (
 	testProductsPath = flag.String("path", "../test-products.xctestproducts", "test products path")
+	testPlan         = flag.String("testPlan", "", "test plan")
 	numBuckets       = flag.Int("buckets", 5, "number of buckets")
 	key              = flag.String("key", "TEST_SHARD", "test shard key")
 )
@@ -26,13 +27,13 @@ func main() {
 		return
 	}
 
-	if err := run(*testProductsPath, *numBuckets); err != nil {
+	if err := run(*testProductsPath, *testPlan, *numBuckets); err != nil {
 		log.Fatal(err)
 	}
 }
 
-func run(testProductsPath string, numBuckets int) error {
-	tests, err := internal.CollectTests(testProductsPath)
+func run(testProductsPath, testPlan string, numBuckets int) error {
+	tests, err := internal.CollectTests(testProductsPath, testPlan)
 	if err != nil {
 		return err
 	}
@@ -63,6 +64,8 @@ func export(buckets [][]string, key string) error {
 	if err != nil {
 		return err
 	}
+
+	tmpDir = "/Users/szabi/Developer/misc/ManyTests/test-output"
 
 	for i, bucket := range buckets {
 		bytes, err := json.Marshal(bucket)
